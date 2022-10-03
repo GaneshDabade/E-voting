@@ -6,6 +6,7 @@ import LoginPage from './components/LoginPage'
 import RegisterPage from './components/RegisterPage'
 import ForgetPasswordPage from './components/ForgetPasswordPage'
 import HomePage from './components/HomePage'
+import ProfileRegister from './components/ProfileRegister'
 
 import './App.css'
 
@@ -19,6 +20,7 @@ export default function App() {
                     <Route path="/register" element={ <RegisterPage/> } />
                     <Route path="/forget-password" element={ <ForgetPasswordPage/> } />
                     <Route path="/home" element={ <HomePage/> } />
+                    <Route path ="/profileregister" element={<ProfileRegister/>}/>
                 </Routes>
         </Router>
         </>
