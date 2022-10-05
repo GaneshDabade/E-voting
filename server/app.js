@@ -1,14 +1,21 @@
+const dotenv = require('dotenv');
 const express = require('express');
+const mongoose = require('mongoose');
 const app = express();
-app.get('/', (req, res) => {
-    res.send(`Hello world from the server app.js`);
-});
+
+dotenv.config({ path: './config.env' });
+require('./db/conn');
+// const User = require('./model/userSchema');
+
+const PORT = process.env.PORT;
+app.use(require('./router/auth'));
+
 app.get('/login', (req, res) => {
     res.send(`Hello world from the login `);
 });
 app.get('/signup', (req, res) => {
     res.send(`Hello world from the signup`);
 });
-app.listen(3000, () => {
-    console.log(`server is runnig at port no 3000`);
+app.listen(PORT, () => {
+    console.log(`server is runnig at port no ${PORT}`);
 })
