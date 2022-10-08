@@ -7,8 +7,8 @@ function LeftCard() {
   return (
 
     
-            <div style={{paddingRight:'5rem'}}>
-             <Card style={{ width: '18rem' }}>
+            <div style={{paddingRight:'10%'}}>
+             <Card style={{ width: '22vw' }}>
              <Card.Body className="text-center">
              <Card.Title >Hii</Card.Title>
              <Card.Text>
