@@ -148,3 +148,11 @@ form span {
 .home-page-title {
     color: #222
 }
+
+.box_center {
+    display: flex;
+    width: 100%;
+    max-width: 60%;
+    margin: 0 auto;
+    justify-content: center;
+}
